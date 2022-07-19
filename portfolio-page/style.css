@@ -1,0 +1,103 @@
+body{
+    background-color: #1F2937;
+}
+
+.con1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+
+}
+.con2{
+    font-size: 24px;
+    color: #E5E7EB;
+}
+.button1{
+    border: none;
+    background-color: #ee590f;
+    border: 1px solid #0072b1;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.button2{
+    border: none;
+    background-color: #10e12f;
+    border: 1px solid #3882f6;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.button3{
+    border: none;
+    background-color: #3882f6;
+    border: 1px solid #3882f6;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+.button1 span, .button2 span, .button3 span, .button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button1 span:after, .button2 span:after, .button3 span:after, .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button1:hover span, .button2:hover span, .button3:hover span, .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button1:hover span:after, .button2:hover span:after, .button3:hover span:after, .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:10%;
+}
+.lin{
+    display: flex;
+    gap: 12px;
+}
+.button{
+    position:absolute;
+    bottom:0;
+    border: none;
+    background-color: #f48ae9;
+    border: 1px solid #3882f6;
+    border-radius: 7px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
